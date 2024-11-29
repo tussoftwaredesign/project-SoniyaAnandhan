@@ -5,14 +5,17 @@ public enum Subject {
 
     // we can easily handle subjects method from here
     public String getSubjects() {
+
         switch (this) {
-            case MATHEMATICS: return "Mathematics";
-            case SCIENCE: return "Science";
-            case HISTORY: return "History";
-            case ENGLISH: return "English";
-            case ART: return "Art";
-            default: return "Unknown Subject";
+            case MATHEMATICS -> System.out.println("Mathematics");
+            case SCIENCE -> System.out.println("Science");
+            case HISTORY -> System.out.println("History");
+            case ENGLISH -> System.out.println("English");
+            case ART -> System.out.println("Art");
+            default -> System.out.println("Unknown subject");
+
 
         }
+        return "";
     }
 }

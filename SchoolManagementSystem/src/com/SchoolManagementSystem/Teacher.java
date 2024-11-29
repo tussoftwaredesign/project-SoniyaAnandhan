@@ -10,7 +10,7 @@ public final class Teacher extends SchoolMemebers {
     }
     public String getName(){
 
-        return super.getName()+" (Teacher of " + subject.getSubjects() + ")";
+        return super.getName()+ " (Teacher of " + getSubject() + ")";
     }
     public Subject getSubject(){
         return subject;

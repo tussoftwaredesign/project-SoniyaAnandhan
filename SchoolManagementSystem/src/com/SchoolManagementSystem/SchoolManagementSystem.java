@@ -1,7 +1,7 @@
 package com.SchoolManagementSystem;
 
 public class SchoolManagementSystem {
-    // Static array to hold all students and teachers informations
+    // Static array to hold all students and teachers information
     private static final Student[] students = new Student[2];
     private static final Teacher[] teachers = new Teacher[1];
     private static int studentIndex = 0;
@@ -41,12 +41,19 @@ public class SchoolManagementSystem {
             // Create Attendance for student1
             Attendence attendance1 = new Attendence(student1, 5);
             attendance1.markAttendence(0, true);
-            attendance1.markAttendence(10,false);
+            attendance1.markAttendence(1,true);
+            attendance1.markAttendence(2,false);
+            attendance1.markAttendence(3,true);
+            attendance1.markAttendence(4,false);
             attendance1.printAttendenceReport();
+
             // create attendance for student2
             Attendence attendance2 = new Attendence(student2, 5);
             attendance2.markAttendence(0, true);
-            attendance2.markAttendence(1,false);
+            attendance2.markAttendence(1,true);
+            attendance2.markAttendence(2,true);
+            attendance2.markAttendence(3,true);
+            attendance2.markAttendence(4,true);
             attendance2.printAttendenceReport();
 
 
